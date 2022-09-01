@@ -1,6 +1,7 @@
 .advantages{
     min-height: 470px;
     padding: 70px 0 65px 0;
+    background-color: #F6F6F6;;
     &__title {
         font-weight: 700;
         font-size: 30px;
@@ -23,7 +24,6 @@
         font-size: 14px;
         line-height: 18px;
         color: #0D0D0D;
-        background-color: #fff;
         img {
             width: 70px;
             height: 70px;
@@ -43,5 +43,13 @@
         color: #0D0D0D;
         line-height: 29px;
         margin: 35px 0;
+    }
+    &__icon {
+        &_animated {
+            animation: heartbeat 2s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
 }
